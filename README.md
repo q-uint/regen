@@ -34,3 +34,13 @@ func main() {
 11000
 10000
 ```
+
+### cli
+- regex (string): regex used to generate strings
+- seed  (int64) : a certain seed to generate strings
+- limit (int)   : the amount of iterations of *, + and repetitions
+- n     (int)   : number of regex strings to generate
+
+```shell script
+go run cli/cli.go -regex="[01]{5}" -n=5
+```
